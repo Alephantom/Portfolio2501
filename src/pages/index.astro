@@ -1,16 +1,16 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+// import Hero from '~/components/widgets/Hero.astro';
+// import Note from '~/components/widgets/Note.astro';
+// import Features from '~/components/widgets/Features.astro';
+// import Features2 from '~/components/widgets/Features2.astro';
+// import Steps from '~/components/widgets/Steps.astro';
+// import Content from '~/components/widgets/Content.astro';
+// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+// import FAQs from '~/components/widgets/FAQs.astro';
+// import Stats from '~/components/widgets/Stats.astro';
+// import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'My Portfolio',
@@ -19,7 +19,25 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
+
+
+  <section class="flex items-center h-full p-16">
+    <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
+      <div class="max-w-md text-center">
+        <h2 class="mb-8 font-bold text-6xl">
+          <span class="text-primary">🚧 Under Construction 🚧</span>
+        </h2>
+        <p class="text-2xl font-semibold md:text-3xl">
+          This page is currently under construction.
+        </p>
+        <p class="mt-4 mb-8 text-lg text-muted dark:text-slate-400">
+        I am working hard to make this page awesome. Please check back soon or find me on LinkedIn!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Widget
 
   <Hero
     actions={[
@@ -49,12 +67,12 @@ const metadata = {
       Blogs.
     </Fragment>
   </Hero>
-
-  <!-- Note Widget ******************* -->
+ ******************* -->
+  <!-- Note Widget 
 
   <Note />
-
-  <!-- Features Widget *************** -->
+******************* -->
+  <!-- Features Widget 
 
   <Features
     id="features"
@@ -100,8 +118,8 @@ const metadata = {
       },
     ]}
   />
-
-  <!-- Content Widget **************** -->
+*************** -->
+  <!-- Content Widget 
 
   <Content
     isReversed
@@ -138,8 +156,8 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <!-- Content Widget **************** -->
+**************** -->
+  <!-- Content Widget
 
   <Content
     isAfterContent
@@ -175,8 +193,8 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <!-- Content Widget **************** -->
+ **************** -->
+  <!-- Content Widget 
 
   <Content
     isReversed
@@ -213,8 +231,8 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
-  <!-- Steps Widget ****************** -->
+**************** -->
+  <!-- Steps Widget 
 
   <Steps
     title="Get your dream website up and running in no time with AstroWind."
@@ -247,8 +265,8 @@ const metadata = {
       alt: 'Steps image',
     }}
   />
-
-  <!-- Features2 Widget ************** -->
+****************** -->
+  <!-- Features2 Widget 
 
   <Features2
     title="Most used widgets"
@@ -311,8 +329,8 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
-
-  <!-- HighlightedPosts Widget ******* -->
+************** -->
+  <!-- HighlightedPosts Widget 
 
   <BlogLatestPosts
     title="Find out more content in our Blog"
@@ -321,8 +339,8 @@ const metadata = {
                         Astro is a very interesting technology. Thanks.
                 `}
   />
-
-  <!-- FAQs Widget ******************* -->
+******* -->
+  <!-- FAQs Widget
 
   <FAQs
     title="Frequently Asked Questions"
@@ -362,8 +380,8 @@ const metadata = {
       },
     ]}
   />
-
-  <!-- Stats Widget ****************** -->
+ ******************* -->
+  <!-- Stats Widget
 
   <Stats
     stats={[
@@ -373,8 +391,8 @@ const metadata = {
       { title: 'Users', amount: '48.4K' },
     ]}
   />
-
-  <!-- CallToAction Widget *********** -->
+ ****************** -->
+  <!-- CallToAction Widget
 
   <CallToAction
     actions={[
@@ -396,4 +414,5 @@ const metadata = {
       waste more time! :P
     </Fragment>
   </CallToAction>
+   *********** -->
 </Layout>
