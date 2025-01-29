@@ -21,13 +21,12 @@ const metadata = {
   <Fragment slot="header">
     <Header
       links={[
-        { text: 'Home', href: '#' },
+        { text: 'Home', href: '/' },
         { text: 'About', href: '#about' },
         { text: 'Resume', href: '#resume' },
         { text: 'Porfolio', href: '#porfolio' },
         { text: 'Blog', href: '/blog' },
         { text: 'Github', href: 'https://github.com/alephantom' },
-        
       ]}
       actions={[
         {
@@ -44,12 +43,13 @@ const metadata = {
 
   <Hero
     id="hero"
-    title="Your Ressourceful and Empathy-Driven Product Manager of Choice"
-    tagline="The allrounder you need for your next project"
+    title="Ressourceful and Empathy-Driven"
+    tagline="The PM you need for your next project"
     actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
   >
     <Fragment slot="subtitle">
-      With a passion for AI-transformation, ressonationg user experiences, and a knack for innovation, I'm dedicated to creating products that make a difference.
+      With a passion for AI-transformation, ressonationg user experiences, and a knack for innovation, I'm dedicated to
+      creating products that make an impactful difference.
     </Fragment>
   </Hero>
 
@@ -59,22 +59,15 @@ const metadata = {
     id="about"
     columns={3}
     items={[
-      {
-        icon: 'tabler:brand-dribbble',
-        callToAction: {
-          target: '_blank',
-          text: 'Dribbble',
-          href: '#',
-        },
-      },
-      {
-        icon: 'tabler:brand-behance',
-        callToAction: {
-          target: '_blank',
-          text: 'Behance',
-          href: '#',
-        },
-      },
+      // {
+      //   icon: 'tabler:brand-dribbble',
+      //   callToAction: {
+      //     target: '_blank',
+      //     text: 'Dribbble',
+      //     href: '#',
+      //   },
+      // },
+
       {
         icon: 'tabler:brand-pinterest',
         callToAction: {
@@ -85,24 +78,30 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Colorful Image',
+      src: '~/assets/images/alb-notion1.png',
+      alt: 'Early adopter Image',
       loading: 'eager',
     }}
   >
     <Fragment slot="content">
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About Me</h2>
       <p>
-        Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-        pixel becomes a brushstroke in the canvas of imagination.
+        I'm a Social Scientist and HR Analyst turned Product Manager, blending my passion for Tech and AI with a deep
+        understanding of people. Innovation excites me, and I thrive on creating products that truly make a difference.
+        <br />
+        I see the world through a lens of possibilities—where others find challenges, I uncover opportunities. My work is
+        fueled by curiosity, teamwork, and a relentless drive to bring ideas to life.
       </p>
       <br />
       <p>
-        I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
-        details of typography, or the vibrant hues of nature during my outdoor escapades.
+        Outside of work, you'll find me in the kitchen, whipping up healthy dishes to nourish my loved ones. Cooking is
+        my creative outlet, and I'm currently channeling that passion into a cookbook!
       </p>
       <br />
-      <p>If you're curious to dive deeper into my work, you can follow me:</p>
+      <p>
+        Feeling hungry? If you're looking for quick, affordable, and healthy meals, check out some of my preview recipes
+        here:
+      </p>
     </Fragment>
 
     <Fragment slot="bg">
@@ -118,14 +117,37 @@ const metadata = {
     items={[
       {
         title:
-          'Graphic Designer <br /> <span class="font-normal">ABC Design Studio, New York, NY</span> <br /> <span class="text-sm font-normal">2021 - Present</span>',
-        description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
+          'Co-Founder <br /> <span class="font-normal"><a href="https://sheleadsproduct.tech" target="_blank" rel="noopener noreferrer" style="color: #0066cc; text-decoration: underline;">SheLeadsProduct.tech</a></span> <br /> <span class="text-sm font-normal">2024 - Present</span>',
+        description:
+          'Developed and launched SheLeadsProduct.tech, a platform empowering women in product management. <br /> Designed and built the website to provide resources, mentorship, and networking opportunities. <br /> Organized team events and hosted monthly roundtables with PMs of all levels. <br /> Committed to helping women thrive in tech and supporting collective growth. <br /><br /> <strong>Key Skills:</strong> Product Strategy, Community Building, Event Organization, Stakeholder Engagement, Digital Marketing, UX/UI.',
         icon: 'tabler:briefcase',
       },
       {
         title:
-          'Junior Graphic Designer <br /> <span class="font-normal">XYZ Creative Agency, Los Angeles, CA</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
-        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+          'Payroll & Benefits Analyst <br /> <span class="font-normal"><a href="https://www.statestreet.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #0066cc">State Street</a><span style="color: #6c757d; font-style: italic;"> (Financial Services)</span><span style="color: #6c757d;">, Germany</span> <br /> <span class="text-sm font-normal">Apr 2020 - Present</span>',
+        description:
+          'Managed payroll operations, ensuring accuracy and efficiency. <br /> Administered employee benefits, including childcare support and anniversary bonuses. <br /> Maintained employee records and generated personnel reports. <br /> Improved HR processes through documentation and best practice alignment. <br /><br /> <strong>Key Skills:</strong> Process Improvement, Compliance, Data Analysis, Payroll Systems, Communication, Problem-Solving.',
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Working Student - Global Human Resources <br /> <span class="font-normal"><a href="https://www.statestreet.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #0066cc">State Street</a>, Germany <span style="color: #6c757d;">(Financial Services)</span></span> <br /> <span class="text-sm font-normal">Sep 2018 - Apr 2020</span>',
+        description:
+          'Supported HR Shared Services in administrative and process improvement tasks. <br /> Assisted payroll operations, ensuring accuracy. <br /> Prepared HR documents, including contract addendums and reference letters. <br /> Maintained employee records and responded to inquiries via the ticket system. <br /> Led administration of monthly childcare benefits and anniversary bonuses. <br /> Developed and documented streamlined HR processes for enhanced efficiency. <br /><br /> <strong>Key Skills:</strong> HR Operations, Payroll Processing, Process Optimization, Customer Support, Documentation, Attention to Detail.',
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Customer Management Advisor <br /> <span class="font-normal"><a href="https://www.ngahr.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #0066cc">NGA Human Resources</a>, Granada, Spain <span style="color: #6c757d;">(HR & Payroll Services)</span></span> <br /> <span class="text-sm font-normal">Sep 2017 - Jul 2018 · 11 mos</span>',
+        description:
+          'Managed payroll and HR operations for multiple clients, ensuring accuracy and compliance. <br /> Streamlined processes, resolved HR inquiries, and optimized workforce administration using SAP, Workday, and Kronos. <br /> Delivered a seamless customer experience through effective problem-solving and communication. <br /><br /> <strong>Key Skills:</strong> Process Optimization, Customer Experience, Problem-Solving, Data Management, Compliance & Regulations.',
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Student Assistant - Gender Studies <br /> <span class="font-normal"><a href="https://www.goethe-university-frankfurt.de" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #0066cc">Goethe University Frankfurt</a>, Germany <span style="color: #6c757d;">(Higher Education)</span></span> <br /> <span class="text-sm font-normal">Oct 2015 - Jul 2016 · 10 mos</span>',
+        description:
+          'Conducted research on gender equity and systemic barriers in career progression. <br /> Led workshops on academic writing and critical thinking, enhancing communication and analytical skills. <br /> Assisted in literature reviews and data analysis to support key research initiatives. <br /><br /> <strong>Key Skills:</strong> Research & Analysis, Critical Thinking, Communication, Data Interpretation, Workshop Facilitation.',
         icon: 'tabler:briefcase',
       },
     ]}
