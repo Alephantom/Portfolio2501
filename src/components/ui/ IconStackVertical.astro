@@ -1,0 +1,17 @@
+---
+const { icons, size = 24, gap = 8 } = Astro.props;
+---
+
+<style>
+    .icon-stack-vertical {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+  
+  <div class="icon-stack-vertical" style={`gap: ${gap}px;`}>
+    {icons.map(icon => (
+      <icon name={icon} size={size} />
+    ))}
+  </div>
