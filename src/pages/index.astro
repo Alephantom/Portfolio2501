@@ -22,7 +22,6 @@ const metadata = {
     <Header
       links={[
         { text: 'Portfolio', href: '/' },
-
         { text: 'Resume', href: '/cv' },
         { text: 'Contact', href: '/contact' },
         
@@ -30,7 +29,7 @@ const metadata = {
       actions={[
         {
           text: 'Let’s connect',
-          href: '/cv',
+          href: '/contact',
         },
       ]}
       isSticky
@@ -58,21 +57,28 @@ const metadata = {
     id="about"
     columns={2}
     items={[
-  {
-    icon: 'tabler:bowl-spoon',
+      {
+    icon: 'tabler:brand-linkedin',
     callToAction: {
       target: '_blank',
-      text: 'Product-Market Fit: Your Stomach',
-      href: 'x', // Replace with actual link
-    },
-  },
-  {
-    icon: 'simple-icons:ubereats',
-    callToAction: {
-      target: '_blank',
-      text: 'Pivoting to Takeout',
-      href: 'https://www.ubereats.com/', // Replace with actual Glovo link or your delivery service
-    },
+      text: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/anna-lenabirkner',
+      },
+  // {
+  //   icon: 'tabler:bowl-spoon',
+  //   callToAction: {
+  //     target: '_blank',
+  //     text: 'Product-Market Fit: Your Stomach',
+  //     href: '/food', 
+  //   },
+  // },
+  // {
+  //   icon: 'simple-icons:ubereats',
+  //   callToAction: {
+  //     target: '_blank',
+  //     text: 'Pivoting to Takeout',
+  //     href: 'https://www.ubereats.com/', // Replace with actual Glovo link or your delivery service
+  //   },
   }
     ]}
     image={{
@@ -95,11 +101,11 @@ const metadata = {
         Outside of work, you'll find me in the kitchen, whipping up healthy dishes to nourish my loved ones. Cooking is
         my creative outlet, and I'm currently channeling that passion into a cookbook!
       </p>
-      <br />
+      <!-- <br />
       <p>
         Feeling hungry? If you're looking for quick, affordable, and healthy meals, check out some of my preview recipes
         here:
-      </p>
+      </p> -->
     </Fragment>
 
     <Fragment slot="bg">
@@ -293,83 +299,17 @@ const metadata = {
   ]}
 />
 
-  <!-- <Steps
-    id="resume"
-    title="Certificates"
-    items={[
-      {
-        title:
-          'Radical Product Thinking: Vision Setting <br /> <span class="font-normal">Pendo.io</span> <br /> <span class="text-sm font-normal">Issued Nov 2024</span>',
-        description:
-          '• Product Vision & Strategy <br /> • Strategic Thinking <br /> • Adaptability & Learning Agility <br /> • Workload Prioritization <br /> • Organization Skills',
-        icon: 'tabler:certificate',
-      },
-      {
-        title:
-          'Introduction to UI and UX Design <br /> <span class="font-normal">Codecademy</span> <br /> <span class="text-sm font-normal">Issued Apr 2024</span>',
-        description:
-          '• UX/UI Principles <br /> • Figma (Software) <br /> • User-Centered Design <br /> • Workload Prioritization <br /> • Organization Skills',
-        icon: 'tabler:certificate',
-      },
-      {
-        title:
-          'Code Foundations Skill Path <br /> <span class="font-normal">Codecademy</span> <br /> <span class="text-sm font-normal">Issued Oct 2023</span>',
-        description:
-          '• HTML & CSS <br /> • GitHub & Version Control <br /> • Jekyll & SaaS <br /> • Workload Prioritization <br /> • Organization Skills',
-        icon: 'tabler:certificate',
-      },
-      {
-        title:
-          'Learn How to Code <br /> <span class="font-normal">Codecademy</span> <br /> <span class="text-sm font-normal">Issued Oct 2023</span>',
-        description: '• Programming Fundamentals <br /> • Workload Prioritization <br /> • Organization Skills',
-        icon: 'tabler:certificate',
-      },
-      {
-        title:
-          'Scrum Master Certification Specialization <br /> <span class="font-normal">Coursera</span> <br /> <span class="text-sm font-normal">Issued Aug 2023</span>',
-        description:
-          '• Scrum & Agile Methodologies <br /> • Project Management <br /> • Kanban & DevOps <br /> • SaaS & Software Development <br /> • Workload Prioritization',
-        icon: 'tabler:certificate',
-      },
-      {
-        title:
-          'Project Initiation: Starting a Successful Project <br /> <span class="font-normal">Grow with Google on Coursera</span> <br /> <span class="text-sm font-normal">Issued Feb 2023</span>',
-        description:
-          '• Agile & Scrum <br /> • Project Management <br /> • Kanban <br /> • Workload Prioritization <br /> • Organization Skills',
-        icon: 'tabler:certificate',
-      },
-      {
-        title:
-          'Foundations of Project Management <br /> <span class="font-normal">Grow with Google on Coursera</span> <br /> <span class="text-sm font-normal">Issued Sep 2022</span>',
-        description:
-          '• Agile & Scrum <br /> • Kanban <br /> • Project Management <br /> • SaaS & Software Development <br /> • Workload Prioritization',
-        icon: 'tabler:certificate',
-      },
-    ]}
-    classes={{ container: 'max-w-3xl' }}
-  /> -->
-
-
   <!-- Easter Egg *********** -->
   <Content
     id="easteregg"
     columns={3}
     items={[
-      // {
-      //   icon: 'tabler:brand-dribbble',
-      //   callToAction: {
-      //     target: '_blank',
-      //     text: 'Dribbble',
-      //     href: '#',
-      //   },
-      // },
-
       {
     icon: 'tabler:brand-linkedin',
     callToAction: {
       target: '_blank',
       text: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/anna-lenabirkner', // Replace with your LinkedIn URL
+      href: 'https://www.linkedin.com/in/anna-lenabirkner', 
     },
   },
   {
@@ -410,91 +350,17 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-<!-- 
-  <Testimonials
-    title="Client testimonials"
-    subtitle="Discover what clients have to say about their experiences working with me."
-    testimonials={[
-      {
-        testimonial: `She took our vague concept and turned it into a visual masterpiece that perfectly aligned with our goals. Her attention to detail and ability to translate ideas into compelling visuals exceeded our expectations.`,
-        name: 'Mark Thompson',
-        job: 'Creative director',
-        image: {
-          src: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Mark Thompson Image',
-        },
-      },
-      {
-        testimonial: `She transformed our brand identity with her creative finesse, capturing our essence in every element. Her dedication and talent truly shine through her work.`,
-        name: 'Emily Martinez',
-        job: 'CEO',
-        image: {
-          src: 'https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=772&q=80',
-          alt: 'Emily Martinez Image',
-        },
-      },
-      {
-        testimonial: `She has an uncanny ability to communicate emotions and stories. She crafted a logo for our NGO that not only represents our cause but also evokes empathy. Her professionalism and commitment make her a designer of exceptional caliber.`,
-        name: 'Laura Simmons',
-        job: 'Founder of an NGO',
-        image: {
-          src: 'https://images.unsplash.com/photo-1554727242-741c14fa561c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Laura Simmons Image',
-        },
-      },
-      {
-        testimonial: `We entrusted Sarah with revamping our website's user interface, and the results were astounding. Her intuitive design sense enhanced user experience, leading to a significant increase in engagement. She's a designer who truly understands the synergy of aesthetics and functionality.`,
-        name: 'Alex Foster',
-        job: 'Director of web services',
-        image: {
-          src: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Alex Foster Image',
-        },
-      },
-      {
-        testimonial: `She took our vision and elevated it beyond imagination. Her ability to capture brand essence and translate it into design is nothing short of remarkable. Working with her has been an inspiring journey.`,
-        name: 'Jessica Collins',
-        job: 'Product Manager',
-        image: {
-          src: 'https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=778&q=80',
-          alt: 'Jessica Collins Image',
-        },
-      },
-      {
-        testimonial: `Her ability to transform concepts into captivating visuals is nothing short of extraordinary. She took our event poster idea and turned it into a visual masterpiece that perfectly captured the essence of our festival. Sarah's dedication, creativity, and knack for delivering beyond expectations make her an invaluable asset to any project.`,
-        name: 'Michael Carter',
-        job: 'Event Coordinator',
-        image: {
-          src: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Michael Carter Image',
-        },
-      },
-    ]}
-  />
-
-  CallToAction Widget *********** -->
 
   <CallToAction
     title="Let's create together"
-    subtitle="Ready to transform your vision into captivating designs?"
+    subtitle=""
     actions={[
       {
         variant: 'primary',
         text: 'Hire me',
-        href: '/',
+        href: '/contact',
       },
     ]}
   />
 
-  <!-- BlogLatestPost Widget **************** -->
-<!-- 
-  <BlogLatestPosts
-    id="blog"
-    title="Explore my insightful articles on my blog"
-    information={`Dive into a realm of design wisdom and creative inspiration, where you'll find invaluable insights, practical tips, and captivating narratives that elevate and enrich your creative journey.`}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </BlogLatestPosts> -->
 </Layout>

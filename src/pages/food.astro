@@ -1,0 +1,39 @@
+---
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import Header from '~/components/widgets/Header.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Recipes',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Portfolio', href: '/' },
+        { text: 'Resume', href: '/cv' },
+        { text: 'Contact', href: '/contact' },
+        
+      ]}
+      actions={[
+        {
+          text: 'Let’s connect',
+          href: '/contact',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
+  <BlogLatestPosts
+  id="Feeling hungry? Let’s cook!"
+  title="Easy, Healthy & Delicious Recipes"
+  information={`Step away from the screen and into the kitchen! Explore my favorite home-cooked meals—quick, wholesome, and full of flavor. Whether you're meal-prepping like a Product Manager or improvising like an Agile Chef, there's a recipe for you!`}
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</BlogLatestPosts>
+</Layout>
