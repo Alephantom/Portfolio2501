@@ -6,10 +6,11 @@ import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-import Testimonials from '~/components/widgets/Testimonials.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+// import Steps from '~/components/widgets/Steps.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
 import { getPermalink } from '~/utils/permalinks';
+
+
 
 const metadata = {
   title: 'My Portfolio',
@@ -17,21 +18,19 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- <Fragment slot="announcement"></Fragment> -->
   <Fragment slot="header">
     <Header
       links={[
-        { text: 'Home', href: '/' },
-        { text: 'About', href: '#about' },
-        { text: 'Resume', href: '#resume' },
-        { text: 'Porfolio', href: '#porfolio' },
-        { text: 'Blog', href: '/blog' },
-        { text: 'Github', href: 'https://github.com/alephantom' },
+        { text: 'Portfolio', href: '/' },
+
+        { text: 'Resume', href: '/cv' },
+        { text: 'Contact', href: '/contact' },
+        
       ]}
       actions={[
         {
-          text: 'Hire me',
-          href: '/contact',
+          text: 'Let’s connect',
+          href: '/cv',
         },
       ]}
       isSticky
@@ -57,25 +56,24 @@ const metadata = {
 
   <Content
     id="about"
-    columns={3}
+    columns={2}
     items={[
-      // {
-      //   icon: 'tabler:brand-dribbble',
-      //   callToAction: {
-      //     target: '_blank',
-      //     text: 'Dribbble',
-      //     href: '#',
-      //   },
-      // },
-
-      {
-        icon: 'tabler:brand-pinterest',
-        callToAction: {
-          target: '_blank',
-          text: 'Pinterest',
-          href: '#',
-        },
-      },
+  {
+    icon: 'tabler:bowl-spoon',
+    callToAction: {
+      target: '_blank',
+      text: 'Product-Market Fit: Your Stomach',
+      href: 'x', // Replace with actual link
+    },
+  },
+  {
+    icon: 'simple-icons:ubereats',
+    callToAction: {
+      target: '_blank',
+      text: 'Pivoting to Takeout',
+      href: 'https://www.ubereats.com/', // Replace with actual Glovo link or your delivery service
+    },
+  }
     ]}
     image={{
       src: '~/assets/images/alb-notion1.png',
@@ -109,104 +107,193 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Steps Widget ****************** -->
 
-  <Steps
-    id="resume"
-    title="Work experience"
+  <!-- Features3 Widget ************** -->
+  <Features3
+    title="What I bring to the table"
+    subtitle="Tools and Technology to Drive Product Success."
+    columns={3}
+    defaultIcon="tabler:tool"
     items={[
-      {
-        title:
-          'Co-Founder & Product Manager<br /> <span class="font-normal"><a href="https://sheleadsproduct.tech" target="_blank" rel="noopener noreferrer" style="color: #0066cc; text-decoration: underline;">SheLeadsProduct.tech</a></span> <br /> <span class="text-sm font-normal">2024 - Present</span>',
-        description:
-          'Developed and launched SheLeadsProduct.tech, a platform empowering women in product management. <br /> Designed and built the website to provide resources, mentorship, and networking opportunities. <br /> Organized team events and hosted monthly roundtables with PMs of all levels. <br /> Committed to helping women thrive in tech and supporting collective growth. <br /><br /> <strong>Key Skills:</strong> Product Strategy, Community Building, Event Organization, Stakeholder Engagement, Digital Marketing, UX/UI.',
-
-        icon: 'tabler:briefcase',
-      },
-      {
-        title:
-          'Payroll & Benefits Analyst <br /> <span class="font-normal"><a href="https://www.statestreet.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #0066cc">State Street</a><span style="color: #6c757d; font-style: italic;"> (Financial Services)</span><span style="color: #6c757d;">, Germany</span> <br /> <span class="text-sm font-normal">2020 - Present</span>',
-        description:
-          'Managed payroll operations, ensuring accuracy and efficiency. <br /> Administered employee benefits, including childcare support and anniversary bonuses. <br /> Maintained employee records and generated personnel reports. <br /> Improved HR processes through documentation and best practice alignment. <br /><br /> <strong>Key Skills:</strong> Process Improvement, Compliance, Data Analysis, Payroll Systems, Communication, Problem-Solving.',
-        icon: 'tabler:briefcase',
-      },
-      {
-        title:
-          'Working Student - Global Human Resources <br /> <span class="font-normal"><a href="https://www.statestreet.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #0066cc">State Street</a><span style="color: #6c757d; font-style: italic;"> (Financial Services)</span><span style="color: #6c757d;">, Germany</span><br /> <span class="text-sm font-normal">2018 - 2020</span>',
-        description:
-          'Supported HR Shared Services in administrative and process improvement tasks. <br /> Assisted payroll operations, ensuring accuracy. <br /> Prepared HR documents, including contract addendums and reference letters. <br /> Maintained employee records and responded to inquiries via the ticket system. <br /> Led administration of monthly childcare benefits and anniversary bonuses. <br /> Developed and documented streamlined HR processes for enhanced efficiency. <br /><br /> <strong>Key Skills:</strong> HR Operations, Payroll Processing, Process Optimization, Customer Support, Documentation, Attention to Detail.',
-        icon: 'tabler:briefcase',
-      },
-      {
-        title:
-          'Customer Management Advisor <br /> <span class="font-normal">NGA Human Resources</a><span style="color: #6c757d;"> (HR & Payroll Services), Spain </span> <br /> <span class="text-sm font-normal">2017 - 2018</span>',
-        description:
-          'Managed payroll and HR operations for multiple clients, ensuring accuracy and compliance. <br /> Streamlined processes, resolved HR inquiries, and optimized workforce administration using SAP, Workday, and Kronos. <br /> Delivered a seamless customer experience through effective problem-solving and communication. <br /><br /> <strong>Key Skills:</strong> Process Optimization, Customer Experience, Problem-Solving, Data Management, Compliance & Regulations.',
-        icon: 'tabler:briefcase',
-      },
-      {
-        title:
-          'Student Assistant - Gender Studies <br /> <span class="font-normal"><a>Goethe University Frankfurt <span style="color: #6c757d;">(Higher Education), Germany </span><br /> <span class="text-sm font-normal">2015 - 2016</span>',
-        description:
-          'Conducted research on gender equity and systemic barriers in career progression. <br /> Led workshops on academic writing and critical thinking, enhancing communication and analytical skills. <br /> Assisted in literature reviews and data analysis to support key research initiatives. <br /><br /> <strong>Key Skills:</strong> Research & Analysis, Critical Thinking, Communication, Data Interpretation, Workshop Facilitation.',
-        icon: 'tabler:briefcase',
-      },
+  {
+    title: 'Roadmapping & Planning',
+    description: 'Experienced with Jira, Trello, and Miro for managing product roadmaps, sprints, and workflows.',
+    icon: 'simple-icons:jira',
+  },
+  {
+    title: 'User Research & Data',
+    description: 'Skilled in Google Analytics and Hotjar to analyze user behavior and optimize experiences.',
+    icon: 'simple-icons:googleanalytics',
+  },
+  {
+    title: 'UX & Prototyping',
+    description: 'Proficient in Figma for designing wireframes, interactive prototypes, and user flows.',
+    icon: 'simple-icons:figma',
+  },
+  {
+    title: 'Communication & Collaboration',
+    description: 'Fluent in Slack, Notion, and Loom for effective team collaboration and documentation.',
+    icon: 'simple-icons:slack',
+  },
+  {
+    title: 'Web Development & Version Control',
+    description: 'Proficient in JavaScript, CSS, and GitHub for front-end development and collaborative coding.',
+    icon: 'simple-icons:github',
+  },
+  {
+    title: 'Languages',
+    description: 'Fluent in German & English, proficient in Spanish (C2).',
+    icon: 'tabler:language',
+  },
+  {
+    title: 'Enterprise & HR Data',
+    description: 'Familiar with Workday and SAP for data analysis and workflow automation.',
+    icon: 'simple-icons:sap',
+  }
     ]}
-    classes={{ container: 'max-w-3xl' }}
   />
 
-  <!-- Steps Widget ****************** -->
+    <!-- Content Widget **************** -->
 
-  <Steps
-    id="resume"
-    title="Education"
+  <Content
+  id="porfolio"
+  title="Have a Look at My Projects"
+  subtitle="From strategy to execution, explore how I build impactful digital products that solve real-world problems and enhance user experiences."
+  isReversed
+  items={[
+    {
+      title: 'Challenge:',
+      description:
+        'Women face high barriers when transitioning into tech due to strict experience requirements and a lack of industry connections.',
+    },
+    {
+      title: 'Impact:',
+      description:
+        'Co-founded SheLeadsProduct.tech to bridge this gap by creating a community-driven platform for networking, mentorship, and real-world PM experience.',
+    },
+    {
+      title: 'My Role:',
+      description:
+        'Built and launched the platform, organized monthly networking events, and established task forces for hands-on product collaboration.',
+    },
+  ]}
+  image={{
+    src: '~/assets/images/11528259.jpg',
+    alt: 'Tech Design Image',
+  }}
+  callToAction={{
+    target: '_blank',
+    text: 'Explore SheLeadsProduct.tech',
+    icon: 'tabler:chevron-right',
+    href: 'https://sheleadsproduct.tech',
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      Driving Impact Through Community <br />
+      <span class="text-2xl">Connecting & Empowering Women in Product</span>
+    </h3>
+  </Fragment>
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Content>
+  <!-- Content Widget **************** -->
+
+  <Content
     items={[
-      {
-        title:
-          'Product Management Bootcamp <br /> <span class="font-normal">AllWomen</span> <br /> <span class="text-sm font-normal">Jan 2025</span>',
-        description:
-          '• Product Strategy & Vision <br /> • Agile & Scrum Methodologies <br /> • Data-Driven Decision Making <br /> • UX & Customer Insights <br /> • Competitive Analysis <br /> • Stakeholder Communication',
-        icon: 'tabler:school',
-      },
-      {
-        title:
-          'Master of Business Administration - MBA <br /> <span class="font-normal">ENEB - Escuela de Negocios Europea de Barcelona</span> <br /> <span class="text-sm font-normal">May 2025</span>',
-        description:
-          '• Business & Product Strategy <br /> • Change Management <br /> • Market Research & Analytics <br /> • Digital Transformation <br /> • Operations & Supply Chain Management <br /> • Leadership & Decision Making',
-        icon: 'tabler:school',
-      },
-      {
-        title:
-          'Bachelor\'s Degree in Sociology and Political Science <br /> <span class="font-normal">Goethe University Frankfurt</span>',
-        description:
-          '• Market & User Research <br /> • Data Analysis & Interpretation <br /> • Critical Thinking & Problem Solving <br /> • Social Behavior & Consumer Insights <br /> • Communication & Collaboration',
-        icon: 'tabler:school',
-      },
-      {
-        title:
-          'Erasmus Program in Sociology and Political Science <br /> <span class="font-normal">Universidad de Granada</span>',
-        description:
-          '• Cross-Cultural Communication <br /> • Adaptability & Learning Agility <br /> • Research & Analytical Thinking <br /> • Policy & Regulatory Understanding',
-        icon: 'tabler:school',
-      },
-      {
-        title:
-          'High School Diploma in Pedagogy and Psychology <br /> <span class="font-normal">Kolping Bildungswerk Stuttgart</span>',
-        description:
-          '• Behavioral Analysis & User Psychology <br /> • Organizational & Team Management <br /> • Teaching & Knowledge Transfer <br /> • Empathy & User-Centered Thinking',
-        icon: 'tabler:school',
-      },
-      {
-        title: 'High School Diploma <br /> <span class="font-normal">Bealsville High School, Ohio</span>',
-        description:
-          '• International & Cultural Adaptability <br /> • Problem-Solving & Independence <br /> • Communication & Teamwork <br /> • Leadership & Initiative',
-        icon: 'tabler:school',
-      },
-    ]}
-    classes={{ container: 'max-w-3xl' }}
-  />
 
-  <Steps
+{
+    title: 'Problem:',
+    description:
+      'The PM Bootcamp’s learning resources were fragmented across multiple tools, making it difficult for women transitioning into tech to track progress, revisit materials, and stay engaged.',
+  },
+  {
+    title: 'Solution:',
+    description:
+      'I designed a centralized Learning Hub to streamline resources, integrate key tools, and provide structured learning paths—enhancing accessibility, engagement, and progress tracking.',
+  },
+  {
+    title: 'Role:',
+    description:
+      'Led product development, defined the vision, and conducted user research. Created personas, prioritized features with Agile methodologies, and designed prototypes & user flows in Figma for usability testing.',
+  }
+    ]}
+    image={{
+      src: '~/assets/images/11488949.jpg',
+      alt: 'Tech Design Image',
+    }}
+
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Learning Hub <br /><span class="text-2xl"> – Reimagining Learning Experiences</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- XP short ****************** -->
+  <Steps2
+  title="Professional Achievements"
+  subtitle="Driving impact through product strategy, community building, and operational excellence."
+  isReversed={true}
+  callToAction={{
+    text: 'See More',
+    href: '/cv', // Links to the full Work Experience page
+  }}
+  items={[
+    {
+      title: 'Founder & Product Manager at SheLeadsProduct.tech',
+      description: 'Built a platform to connect and empower women in product management. Organized networking events, established project task forces, and created a resource hub to foster collaboration and professional growth.',
+      icon: 'tabler:rocket',
+    },
+    {
+      title: 'Payroll & Benefits Analyst at State Street',
+      description: 'Managed payroll operations for a global financial services company, ensuring compliance and efficiency. Spearheaded process improvements and data-driven insights to optimize HR operations.',
+      icon: 'tabler:briefcase',
+    },
+    {
+      title: 'Customer Management Advisor at NGA Human Resources',
+      description: 'Managed payroll and HR operations for multiple clients, ensuring accuracy and compliance. Optimized workforce administration, streamlined processes, and enhanced the customer experience through problem-solving and data management.',
+      icon: 'tabler:users',
+    },
+  ]}
+/>
+
+  <!-- Steps Widget ****************** -->
+  <Steps2
+  title="Academic Achievements"
+  subtitle="A foundation built on strategic learning, data-driven insights, and global perspectives."
+
+  callToAction={{
+    text: 'See More',
+    href: '/cv', // Links to the full Education page
+  }}
+  items={[
+    {
+      title: 'Product Management Bootcamp – AllWomen',
+      description: 'Developed expertise in product strategy, Agile methodologies, data-driven decision-making, and stakeholder management to drive impactful product solutions.',
+      icon: 'tabler:school',
+    },
+    {
+      title: 'MBA – ENEB (Escuela de Negocios Europea de Barcelona)',
+      description: 'Specialized in business strategy, change management, digital transformation, and market research to enhance leadership and operational efficiency.',
+      icon: 'tabler:businessplan',
+    },
+    {
+      title: 'BA in Sociology & Political Science – Goethe University Frankfurt',
+      description: 'Gained deep analytical skills in market research, user behavior, and data interpretation, laying the foundation for human-centered product development.',
+      icon: 'tabler:book',
+    },
+  ]}
+/>
+
+  <!-- <Steps
     id="resume"
     title="Certificates"
     items={[
@@ -260,217 +347,8 @@ const metadata = {
       },
     ]}
     classes={{ container: 'max-w-3xl' }}
-  />
-
-  <!-- Features3 Widget ************** -->
-  <Features3
-    title="Tools & Technologies"
-    subtitle="Leveraging the right tools to drive product success, collaboration, and efficiency."
-    columns={3}
-    defaultIcon="tabler:tool"
-    items={[
-      {
-        title: 'Roadmapping & Planning',
-        description: 'Experienced with Jira, Trello, and Miro for managing product roadmaps, sprints, and workflows.',
-        icon: 'simple-icons:jira',
-      },
-      {
-        title: 'User Research & Data',
-        description: 'Skilled in Google Analytics and Hotjar to analyze user behavior and optimize experiences.',
-        icon: 'simple-icons:googleanalytics',
-      },
-      {
-        title: 'UX & Prototyping',
-        description: 'Proficient in Figma for designing wireframes, interactive prototypes, and user flows.',
-        icon: 'simple-icons:figma',
-      },
-      {
-        title: 'Communication & Collaboration',
-        description: 'Fluent in Slack, Notion, and Loom for effective team collaboration and documentation.',
-        icon: 'simple-icons:slack',
-      },
-      {
-        title: 'Technical & APIs',
-        description: 'Hands-on experience with SQL for querying data and working with APIs.',
-        icon: 'simple-icons:mysql',
-      },
-      {
-        title: 'Enterprise & HR Data',
-        description: 'Familiar with Workday and SAP for data analysis and workflow automation.',
-        icon: 'simple-icons:sap',
-      },
-    ]}
-  />
-
-  <!-- <Features3
-    title="Skills"
-    subtitle="Bringing Products to Life Through Strategy, Execution, and Collaboration."
-    columns={3}
-    defaultIcon="tabler:point-filled"
-    items={[
-      // Strategy & Vision
-      {
-        title: 'Product Strategy',
-        description:
-          'Expert in defining product roadmaps, setting goals, and aligning vision with business objectives.',
-      },
-      {
-        title: 'Agile & Scrum Methodologies',
-        description: 'Experienced in managing sprints, backlogs, and iterative product development.',
-      },
-      {
-        title: 'Stakeholder Management',
-        description: 'Skilled at aligning cross-functional teams, executives, and customers on product goals.',
-      },
-      {
-        title: 'Market Research & Competitive Analysis',
-        description: 'Skilled in identifying market trends, analyzing competitors, and understanding user needs.',
-      },
-      {
-        title: 'Project Management',
-        description: 'Strong ability to prioritize tasks, coordinate teams, and ensure timely delivery of projects.',
-      },
-      {
-        title: 'Problem-Solving & Critical Thinking',
-        description: 'Capable of analyzing challenges and making data-driven, strategic trade-offs.',
-      },
-
-      {
-        title: 'Data-Driven Decision Making',
-        description: 'Proficient in leveraging data insights, A/B testing, and key metrics for informed decisions.',
-      }, -->
-
-      <!-- // Execution & Delivery
-
-      {
-        title: 'UX & Customer Insights',
-        description: 'Adept in optimizing user experiences through customer feedback and usability testing.',
-      },
-
-      // Communication & Leadership
-
-      {
-        title: 'Cross-Functional Collaboration',
-        description: 'Effective in working with engineering, design, and business teams to drive product success.',
-      },
-    ]}
   /> -->
 
-  <!-- Content Widget **************** -->
-
-  <Content
-    id="porfolio"
-    title="Have a Look at My Projects"
-    subtitle="From strategy to execution, explore how I build impactful digital products that solve real-world problems and enhance user experiences."
-    isReversed
-    items={[
-      {
-        title: 'Learning Hub – Reimagining Learning Experiences',
-        description:
-          'Developed a product roadmap and MVP for a digital learning hub focused on improving the learning experience for women transitioning into tech. Conducted user research, defined key features, and created an interactive prototype to enhance engagement and career development opportunities.',
-      },
-      {
-        title: 'Role:',
-        description:
-          'Led the product development process, collaborating with a cross-functional team and developing the product vision. Defined user personas, prioritized features using Agile methodologies such as ICE and MoSCoW, and designed wireframes and user flows in Figma to support usability testing.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
-      alt: 'Tech Design Image',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 1: <br /><span class="text-2xl">Brand identity for tech innovators</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description:
-          'Designed a captivating event poster for an art and music festival, "ArtWave Fusion," aiming to showcase the synergy between visual art and music genres.',
-      },
-      {
-        title: 'Role:',
-        description: `Translated the festival's creative theme into a visually striking poster. Used bold typography, vibrant colors, and abstract elements to depict the fusion of art and music. Ensured the design captured the festival's vibrant atmosphere.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Art and Music Poster Image',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 2: <br /><span class="text-2xl">Event poster for art & music festival</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description: `Redesigned the e-commerce website for an eco-conscious fashion brand, GreenVogue. The objective was to align the brand's online presence with its sustainable ethos and improve user experience.`,
-      },
-      {
-        title: 'Role:',
-        description: `Conducted a thorough analysis of the brand's values and customer base to inform the design direction. Created a visually appealing interface with intuitive navigation, highlighting sustainable materials, and integrating a user-friendly shopping experience.`,
-      },
-    ]}
-    image={{
-      src: 'https://plus.unsplash.com/premium_photo-1683288295841-782fa47e4770?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Fashion e-commerce Image',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 3: <br /><span class="text-2xl">E-commerce website redesign for fashion brand</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
 
   <!-- Easter Egg *********** -->
   <Content
@@ -532,7 +410,7 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
+<!-- 
   <Testimonials
     title="Client testimonials"
     subtitle="Discover what clients have to say about their experiences working with me."
@@ -594,7 +472,7 @@ const metadata = {
     ]}
   />
 
-  <!-- CallToAction Widget *********** -->
+  CallToAction Widget *********** -->
 
   <CallToAction
     title="Let's create together"
@@ -609,7 +487,7 @@ const metadata = {
   />
 
   <!-- BlogLatestPost Widget **************** -->
-
+<!-- 
   <BlogLatestPosts
     id="blog"
     title="Explore my insightful articles on my blog"
@@ -618,5 +496,5 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </BlogLatestPosts>
+  </BlogLatestPosts> -->
 </Layout>

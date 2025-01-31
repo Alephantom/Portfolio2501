@@ -1,0 +1,221 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+
+const metadata = {
+  title: 'My Resume',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Portfolio', href: '/' },
+        { text: 'Resume', href: '/cv' },
+        { text: 'Contact', href: '/contact' },
+        
+      ]}
+      actions={[
+        {
+          text: 'What are you waiting for?',
+          href: '/cv',
+        },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    id="hero"
+    title="Curiosity-led, opportunity-focused, impact-driven."
+    tagline="Experience, Education & Growth Mindset"
+  >
+    <Fragment slot="subtitle">
+      I’ve always been fascinated by the ‘why’ behind people’s actions and the potential hidden within challenges. This
+      passion fuels my career, guiding my approach to product strategy, innovation, and continuous learning.
+    </Fragment>
+  </Hero>
+
+  <Steps2
+    title="Professional Achievements"
+    subtitle="Driving impact through product strategy, community building, and operational excellence."
+    items={[
+            {
+        title: 'Certificates & Courses',
+        description:
+          '<a href="#certifications" style="text-decoration: underline; color: #0066cc;">View My Certifications</a>',
+        icon: 'tabler:certificate',
+      },
+      {
+        title: 'Professional Experience',
+        description:
+          '<a href="#resume" style="text-decoration: underline; color: #0066cc;">Explore My Work History</a>',
+        icon: 'tabler:building',
+      },
+
+      {
+        title: 'Educational Background',
+        description:
+          '<a href="#education" style="text-decoration: underline; color: #0066cc;">See My Academic Journey</a>',
+        icon: 'tabler:school',
+      },
+    ]}
+  />
+<!-- Steps Widget ****************** -->
+
+<Features3
+title="Certifications & Courses"
+subtitle="Continuous learning to stay ahead in product management and technology"
+columns={2}
+items={[
+{
+    title: 'Radical Product Thinking: Vision Setting',
+    description: 'Pendo.io | 2024 <br /> Mastered product vision development and strategic thinking for long-term impact. <br /> <a href="YOUR_CERTIFICATE_LINK" target="_blank" style="text-decoration: underline; color: #0066cc;">View Certificate</a>',
+    icon: 'tabler:target',
+  },
+  {
+    title: 'Introduction to UI/UX Design',
+    description: 'Codecademy | 2024 <br /> Developed skills in user research, wireframing, and usability testing using Figma. <br /> <a href="YOUR_CERTIFICATE_LINK" target="_blank" style="text-decoration: underline; color: #0066cc;">View Certificate</a>',
+    icon: 'tabler:palette',
+  },
+  {
+    title: 'Scrum Master Certification',
+    description: 'Coursera | 2023 <br /> Gained expertise in Agile methodologies, Scrum frameworks, and team facilitation. <br /> <a href="YOUR_CERTIFICATE_LINK" target="_blank" style="text-decoration: underline; color: #0066cc;">View Certificate</a>',
+    icon: 'tabler:arrows-shuffle',
+  },
+  {
+    title: 'Project Initiation: Starting a Successful Project',
+    description: 'Google Coursera | 2023 <br /> Learned project planning fundamentals, stakeholder alignment, and risk assessment. <br /> <a href="YOUR_CERTIFICATE_LINK" target="_blank" style="text-decoration: underline; color: #0066cc;">View Certificate</a>',
+    icon: 'tabler:rocket',
+  },
+
+  {
+    title: 'Code Foundations',
+    description: 'Codecademy | 2023 <br /> Built a strong foundation in JavaScript, CSS, and version control with GitHub. <br /> <a href="YOUR_CERTIFICATE_LINK" target="_blank" style="text-decoration: underline; color: #0066cc;">View Certificate</a>',
+    icon: 'tabler:code',
+  },
+  {
+    title: 'Foundations of Project Management',
+    description: 'Google Coursera | 2022 <br /> Acquired key project management skills, including Agile workflows and stakeholder communication. <br /> <a href="YOUR_CERTIFICATE_LINK" target="_blank" style="text-decoration: underline; color: #0066cc;">View Certificate</a>',
+    icon: 'tabler:briefcase',
+  },
+]}
+classes={{ container: 'max-w-5xl' }}
+/>
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    id="resume"
+    title="Work experience"
+    items={[
+      {
+        title:
+          'Co-Founder & Product Manager<br /> <span class="font-normal"><a href="https://sheleadsproduct.tech" target="_blank" rel="noopener noreferrer" style="color: #0066cc; text-decoration: underline;">SheLeadsProduct.tech</a></span> <br /> <span class="text-sm font-normal">2024 - Present</span>',
+        description:
+          'Developed and launched SheLeadsProduct.tech, a platform empowering women in product management. <br /> Designed and built the website to provide resources, mentorship, and networking opportunities. <br /> Organized team events and hosted monthly roundtables with PMs of all levels. <br /> Committed to helping women thrive in tech and supporting collective growth. <br /><br /> <strong>Key Skills:</strong> Product Strategy, Community Building, Event Organization, Stakeholder Engagement, Digital Marketing, UX/UI.',
+
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Payroll & Benefits Analyst <br /> <span class="font-normal"><a href="https://www.statestreet.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #0066cc">State Street</a><span style="color: #6c757d; font-style: italic;"> (Financial Services)</span><span style="color: #6c757d;">, Germany</span> <br /> <span class="text-sm font-normal">2020 - Present</span>',
+        description:
+          'Managed payroll operations, ensuring accuracy and efficiency. <br /> Administered employee benefits, including childcare support and anniversary bonuses. <br /> Maintained employee records and generated personnel reports. <br /> Improved HR processes through documentation and best practice alignment. <br /><br /> <strong>Key Skills:</strong> Process Improvement, Compliance, Data Analysis, Payroll Systems, Communication, Problem-Solving.',
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Working Student - Global Human Resources <br /> <span class="font-normal"><a href="https://www.statestreet.com" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: #0066cc">State Street</a><span style="color: #6c757d; font-style: italic;"> (Financial Services)</span><span style="color: #6c757d;">, Germany</span><br /> <span class="text-sm font-normal">2018 - 2020</span>',
+        description:
+          'Supported HR Shared Services in administrative and process improvement tasks. <br /> Assisted payroll operations, ensuring accuracy. <br /> Prepared HR documents, including contract addendums and reference letters. <br /> Maintained employee records and responded to inquiries via the ticket system. <br /> Led administration of monthly childcare benefits and anniversary bonuses. <br /> Developed and documented streamlined HR processes for enhanced efficiency. <br /><br /> <strong>Key Skills:</strong> HR Operations, Payroll Processing, Process Optimization, Customer Support, Documentation, Attention to Detail.',
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Customer Management Advisor <br /> <span class="font-normal">NGA Human Resources</a><span style="color: #6c757d;"> (HR & Payroll Services), Spain </span> <br /> <span class="text-sm font-normal">2017 - 2018</span>',
+        description:
+          'Managed payroll and HR operations for multiple clients, ensuring accuracy and compliance. <br /> Streamlined processes, resolved HR inquiries, and optimized workforce administration using SAP, Workday, and Kronos. <br /> Delivered a seamless customer experience through effective problem-solving and communication. <br /><br /> <strong>Key Skills:</strong> Process Optimization, Customer Experience, Problem-Solving, Data Management, Compliance & Regulations.',
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Student Assistant - Gender Studies <br /> <span class="font-normal"><a>Goethe University Frankfurt <span style="color: #6c757d;">(Higher Education), Germany </span><br /> <span class="text-sm font-normal">2015 - 2016</span>',
+        description:
+          'Conducted research on gender equity and systemic barriers in career progression. <br /> Led workshops on academic writing and critical thinking, enhancing communication and analytical skills. <br /> Assisted in literature reviews and data analysis to support key research initiatives. <br /><br /> <strong>Key Skills:</strong> Research & Analysis, Critical Thinking, Communication, Data Interpretation, Workshop Facilitation.',
+        icon: 'tabler:briefcase',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+  <Steps
+    id="education"
+    title="Education"
+    items={[
+      {
+        title:
+          'Master of Business Administration - MBA <br /> <span class="font-normal">ENEB - Escuela de Negocios Europea de Barcelona</span> <br /> <span class="text-sm font-normal">Oct 2025</span>',
+        description:
+          '• Business & Product Strategy <br /> • Change Management <br /> • Market Research & Analytics <br /> • Digital Transformation <br /> • Operations & Supply Chain Management <br /> • Leadership & Decision Making',
+        icon: 'tabler:school',
+      },
+      {
+        title:
+          'Product Management Bootcamp <br /> <span class="font-normal">AllWomen</span> <br /> <span class="text-sm font-normal">Jan 2025</span>',
+        description:
+          '• Product Strategy & Vision <br /> • Agile & Scrum Methodologies <br /> • Data-Driven Decision Making <br /> • UX & Customer Insights <br /> • Competitive Analysis <br /> • Stakeholder Communication',
+        icon: 'tabler:school',
+      },
+
+      {
+        title:
+          'Bachelor\'s Degree in Sociology and Political Science <br /> <span class="font-normal">Goethe University Frankfurt</span>',
+        description:
+          '• Market & User Research <br /> • Data Analysis & Interpretation <br /> • Critical Thinking & Problem Solving <br /> • Social Behavior & Consumer Insights <br /> • Communication & Collaboration',
+        icon: 'tabler:school',
+      },
+      {
+        title:
+          'Erasmus Program in Sociology and Political Science <br /> <span class="font-normal">Universidad de Granada</span>',
+        description:
+          '• Cross-Cultural Communication <br /> • Adaptability & Learning Agility <br /> • Research & Analytical Thinking <br /> • Policy & Regulatory Understanding',
+        icon: 'tabler:school',
+      },
+      {
+        title:
+          'High School Diploma in Pedagogy and Psychology <br /> <span class="font-normal">Kolping Bildungswerk Stuttgart</span>',
+        description:
+          '• Behavioral Analysis & User Psychology <br /> • Organizational & Team Management <br /> • Teaching & Knowledge Transfer <br /> • Empathy & User-Centered Thinking',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'High School Diploma <br /> <span class="font-normal">Bealsville High School, Ohio</span>',
+        description:
+          '• International & Cultural Adaptability <br /> • Problem-Solving & Independence <br /> • Communication & Teamwork <br /> • Leadership & Initiative',
+        icon: 'tabler:school',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+  <Hero
+    id="hero"
+    title="Contact me!"
+    tagline="That's it!"
+    actions={[{ variant: 'primary', text: 'go back to Portfolio', href: '/' }]}
+  >
+    <Fragment slot="subtitle">
+   I am the ressourceful and empathy-driven PM you need for your next project.
+    </Fragment>
+  </Hero>
+
+    
+</Layout>
