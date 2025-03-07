@@ -8,13 +8,13 @@ export const headerData = {
   links: [
     {
       text: 'Homes',
-      href: getPermalink('/homes/personal'),
+      href: getPermalink('/'),
         
       
     },
     {
       text: 'About Me',
-          href: getPermalink('/about'),
+          href: getPermalink('/cv'),
     //   links: [
     //     {
     //       text: 'Features (Anchor Link)',
@@ -100,10 +100,7 @@ export const headerData = {
     //     },
     //   ],
     // },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
+
   ],
   actions: [{ text: 'Connect', href: '/contact', target: '_blank' }],
 };
