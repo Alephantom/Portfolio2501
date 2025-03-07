@@ -1,7 +1,7 @@
 ---
 publishDate: 2024-03-12T00:00:00Z
 author: Anna-Lena Birkner
-title: Cover Letter
+title: Cover Letter - Plug and Play
 category: Application
 ---
 ## Driving Innovation & Strategy at Plug and Play Tech Center
