@@ -7,7 +7,7 @@ import { getPermalink,
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Home',
       href: getPermalink('/'),
         
       
