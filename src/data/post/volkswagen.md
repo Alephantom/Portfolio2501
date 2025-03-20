@@ -1,9 +1,8 @@
 ---
 publishDate: 2024-03-20T00:00:00Z
 author: Anna-Lena Birkner
-title: Cover Letter - Volkswagen Group Services - Valencia
-excerpt: Junior Consultant Project Management
-category: Application
+title: Junior Consultant Project Management - Volkswagen Group Services - Valencia
+category: Cover Letter
 ---
 
 ## Driving Excellence in Project Management: My Vision for Volkswagen
