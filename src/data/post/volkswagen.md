@@ -2,8 +2,10 @@
 publishDate: 2024-03-20T00:00:00Z
 author: Anna-Lena Birkner
 title: Cover Letter - Volkswagen Group Services - Valencia
+excerpt: Junior Consultant Project Management
 category: Application
 ---
+
 ## Driving Excellence in Project Management: My Vision for Volkswagen
 
 With a background in social science, HR Analytics, product management and Agile methodologies, I thrive on **solving complex challenges, streamlining workflows, and driving impactful execution**. My structured approach ensures that processes run efficiently, teams collaborate effectively, and strategic goals translate into measurable outcomes. By leveraging data-driven insights and iterative improvements, **I can support Volkswagen in optimizing project execution, enhancing operational efficiency, and fostering a culture of continuous improvement—especially when it comes to launching and advancing new projects successfully.** 
