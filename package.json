@@ -20,13 +20,8 @@
     "fix": "npm run fix:eslint && npm run fix:prettier",
     "fix:eslint": "eslint --fix .",
     "fix:prettier": "prettier -w .",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "**/*.{js,ts,jsx,tsx,astro}": [
-      "eslint --fix",
-      "prettier --write"
-    ]
+    "lint": "eslint .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.11",
@@ -64,7 +59,6 @@
     "globals": "^15.14.0",
     "husky": "^9.1.7",
     "js-yaml": "^4.1.0",
-    "lint-staged": "^15.5.0",
     "mdast-util-to-string": "^4.0.0",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
