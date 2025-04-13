@@ -27,6 +27,7 @@ In my current role at State Street Bank, I have **led automation initiatives** t
 Volkswagen’s dedication to innovation, efficiency, and global collaboration aligns perfectly with my passion for impactful project management. As a company that takes responsibility for streamlining operations and optimizing business services for its global network, Volkswagen Group Services fosters a culture of continuous improvement and excellence. The opportunity to contribute to these efforts, ensuring seamless project execution and operational effectiveness, excites me. **I am eager to apply my structured problem-solving mindset and analytical expertise to enhance processes, drive decision-making, and accelerate the successful launch of strategic initiatives.**
 
 ## I bring:
+
 ✔ A strong analytical approach to problem-solving and project execution.
 ✔ Expertise in Agile methodologies and stakeholder management.
 ✔ A track record of improving operational efficiency and driving results.

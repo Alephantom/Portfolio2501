@@ -5,7 +5,6 @@ import Header from '~/components/widgets/Header.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Hero from '~/components/widgets/Hero.astro';
 
-
 const metadata = {
   title: 'Neurons-Lab',
 };
@@ -18,7 +17,6 @@ const metadata = {
         { text: 'Portfolio', href: '/' },
         { text: 'Resume', href: '/cv' },
         { text: 'Contact', href: '/contact' },
-        
       ]}
       actions={[
         {
@@ -33,11 +31,12 @@ const metadata = {
 
   <Hero>
     <Fragment slot="image">
-      <iframe 
-        src="https://www.loom.com/embed/f78d06f70b634f89a785aa97f8b032be?sid=91457177-9828-41fd-ad16-adb448983e52" 
-        title="Just one click away" 
-        allowfullscreen 
-        class="w-full h-64 md:h-96 rounded-xl shadow-lg">
+      <iframe
+        src="https://www.loom.com/embed/f78d06f70b634f89a785aa97f8b032be?sid=91457177-9828-41fd-ad16-adb448983e52"
+        title="Just one click away"
+        allowfullscreen
+        class="w-full h-64 md:h-96 rounded-xl shadow-lg"
+      >
       </iframe>
     </Fragment>
   </Hero>
@@ -58,8 +57,6 @@ const metadata = {
         description: '+34 640 76 79 94',
         icon: 'tabler:headset',
       },
-
     ]}
   />
-
 </Layout>

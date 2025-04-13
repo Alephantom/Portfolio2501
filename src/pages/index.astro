@@ -10,8 +10,6 @@ import Features3 from '~/components/widgets/Features3.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import { getPermalink } from '~/utils/permalinks';
 
-
-
 const metadata = {
   title: 'My Portfolio',
 };
@@ -24,7 +22,6 @@ const metadata = {
         { text: 'Portfolio', href: '/' },
         { text: 'Resume', href: '/cv' },
         { text: 'Contact', href: '/contact' },
-        
       ]}
       actions={[
         {
@@ -58,28 +55,28 @@ const metadata = {
     columns={2}
     items={[
       {
-    icon: 'tabler:brand-linkedin',
-    callToAction: {
-      target: '_blank',
-      text: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/anna-lenabirkner',
+        icon: 'tabler:brand-linkedin',
+        callToAction: {
+          target: '_blank',
+          text: 'LinkedIn',
+          href: 'https://www.linkedin.com/in/anna-lenabirkner',
+        },
+        // {
+        //   icon: 'tabler:bowl-spoon',
+        //   callToAction: {
+        //     target: '_blank',
+        //     text: 'Product-Market Fit: Your Stomach',
+        //     href: '/food',
+        //   },
+        // },
+        // {
+        //   icon: 'simple-icons:ubereats',
+        //   callToAction: {
+        //     target: '_blank',
+        //     text: 'Pivoting to Takeout',
+        //     href: 'https://www.ubereats.com/', // Replace with actual Glovo link or your delivery service
+        //   },
       },
-  // {
-  //   icon: 'tabler:bowl-spoon',
-  //   callToAction: {
-  //     target: '_blank',
-  //     text: 'Product-Market Fit: Your Stomach',
-  //     href: '/food', 
-  //   },
-  // },
-  // {
-  //   icon: 'simple-icons:ubereats',
-  //   callToAction: {
-  //     target: '_blank',
-  //     text: 'Pivoting to Takeout',
-  //     href: 'https://www.ubereats.com/', // Replace with actual Glovo link or your delivery service
-  //   },
-  }
     ]}
     image={{
       src: '~/assets/images/alb-notion1.png',
@@ -113,7 +110,6 @@ const metadata = {
     </Fragment>
   </Content>
 
-
   <!-- Features3 Widget ************** -->
   <Features3
     title="What I bring to the table"
@@ -121,116 +117,116 @@ const metadata = {
     columns={3}
     defaultIcon="tabler:tool"
     items={[
-  {
-    title: 'Roadmapping & Planning',
-    description: 'Experienced with Jira, Trello, and Miro for managing product roadmaps, sprints, and workflows.',
-    icon: 'simple-icons:jira',
-  },
-  {
-    title: 'User Research & Data',
-    description: 'Skilled in Google Analytics for analyzing user behavior and optimizing experiences, as well as XML for data structuring and integration.',
-    icon: 'simple-icons:googleanalytics',
-  },
-  {
-    title: 'UX & Prototyping',
-    description: 'Proficient in Figma for designing wireframes, interactive prototypes, and user flows.',
-    icon: 'simple-icons:figma',
-  },
-  {
-    title: 'Communication & Collaboration',
-    description: 'Fluent in Slack, Notion, and Loom for effective team collaboration and documentation.',
-    icon: 'simple-icons:slack',
-  },
-  {
-    title: 'Web Development & Version Control',
-    description: 'Proficient in JavaScript, HTML, Python, and GitHub for front-end development and collaborative coding.',
-    icon: 'simple-icons:github',
-  },
-  {
-    title: 'Languages',
-    description: 'Fluent in German & English, proficient in Spanish (C2).',
-    icon: 'tabler:language',
-  },
-  {
-    title: 'Enterprise & HR Data',
-    description: 'Familiar with Workday and SAP for data analysis and workflow automation.',
-    icon: 'simple-icons:sap',
-  }
+      {
+        title: 'Roadmapping & Planning',
+        description: 'Experienced with Jira, Trello, and Miro for managing product roadmaps, sprints, and workflows.',
+        icon: 'simple-icons:jira',
+      },
+      {
+        title: 'User Research & Data',
+        description:
+          'Skilled in Google Analytics for analyzing user behavior and optimizing experiences, as well as XML for data structuring and integration.',
+        icon: 'simple-icons:googleanalytics',
+      },
+      {
+        title: 'UX & Prototyping',
+        description: 'Proficient in Figma for designing wireframes, interactive prototypes, and user flows.',
+        icon: 'simple-icons:figma',
+      },
+      {
+        title: 'Communication & Collaboration',
+        description: 'Fluent in Slack, Notion, and Loom for effective team collaboration and documentation.',
+        icon: 'simple-icons:slack',
+      },
+      {
+        title: 'Web Development & Version Control',
+        description:
+          'Proficient in JavaScript, HTML, Python, and GitHub for front-end development and collaborative coding.',
+        icon: 'simple-icons:github',
+      },
+      {
+        title: 'Languages',
+        description: 'Fluent in German & English, proficient in Spanish (C2).',
+        icon: 'tabler:language',
+      },
+      {
+        title: 'Enterprise & HR Data',
+        description: 'Familiar with Workday and SAP for data analysis and workflow automation.',
+        icon: 'simple-icons:sap',
+      },
     ]}
   />
 
-    <!-- Content Widget **************** -->
+  <!-- Content Widget **************** -->
 
   <Content
-  id="porfolio"
-  title="Have a Look at My Projects"
-  subtitle="From strategy to execution, explore how I build impactful digital products that solve real-world problems and enhance user experiences."
-  isReversed
-  items={[
-    {
-      title: 'Challenge:',
-      description:
-        'Women face high barriers when transitioning into tech due to strict experience requirements and a lack of industry connections.',
-    },
-    {
-      title: 'Impact:',
-      description:
-        'Co-founded SheLeadsProduct.tech to bridge this gap by creating a community-driven platform for networking, mentorship, and real-world PM experience.',
-    },
-    {
-      title: 'My Role:',
-      description:
-        'Built and launched the platform, organized monthly networking events, and established task forces for hands-on product collaboration.',
-    },
-  ]}
-  image={{
-    src: '~/assets/images/11528259.jpg',
-    alt: 'Tech Design Image',
-  }}
-  callToAction={{
-    target: '_blank',
-    text: 'Explore SheLeadsProduct.tech',
-    icon: 'tabler:chevron-right',
-    href: 'https://sheleadsproduct.tech',
-  }}
->
-  <Fragment slot="content">
-    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-      Driving Impact Through Community <br />
-      <span class="text-2xl">Connecting & Empowering Women in Product</span>
-    </h3>
-  </Fragment>
+    id="porfolio"
+    title="Have a Look at My Projects"
+    subtitle="From strategy to execution, explore how I build impactful digital products that solve real-world problems and enhance user experiences."
+    isReversed
+    items={[
+      {
+        title: 'Challenge:',
+        description:
+          'Women face high barriers when transitioning into tech due to strict experience requirements and a lack of industry connections.',
+      },
+      {
+        title: 'Impact:',
+        description:
+          'Co-founded SheLeadsProduct.tech to bridge this gap by creating a community-driven platform for networking, mentorship, and real-world PM experience.',
+      },
+      {
+        title: 'My Role:',
+        description:
+          'Built and launched the platform, organized monthly networking events, and established task forces for hands-on product collaboration.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/11528259.jpg',
+      alt: 'Tech Design Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Explore SheLeadsProduct.tech',
+      icon: 'tabler:chevron-right',
+      href: 'https://sheleadsproduct.tech',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Driving Impact Through Community <br />
+        <span class="text-2xl">Connecting & Empowering Women in Product</span>
+      </h3>
+    </Fragment>
 
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-  </Fragment>
-</Content>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
   <!-- Content Widget **************** -->
 
   <Content
     items={[
-
-{
-    title: 'Problem:',
-    description:
-      'The PM Bootcamp’s learning resources were fragmented across multiple tools, making it difficult for women transitioning into tech to track progress, revisit materials, and stay engaged.',
-  },
-  {
-    title: 'Solution:',
-    description:
-      'I designed a centralized Learning Hub to streamline resources, integrate key tools, and provide structured learning paths—enhancing accessibility, engagement, and progress tracking.',
-  },
-  {
-    title: 'Role:',
-    description:
-      'Led product development, defined the vision, and conducted user research. Created personas, prioritized features with Agile methodologies, and designed prototypes & user flows in Figma for usability testing.',
-  }
+      {
+        title: 'Problem:',
+        description:
+          'The PM Bootcamp’s learning resources were fragmented across multiple tools, making it difficult for women transitioning into tech to track progress, revisit materials, and stay engaged.',
+      },
+      {
+        title: 'Solution:',
+        description:
+          'I designed a centralized Learning Hub to streamline resources, integrate key tools, and provide structured learning paths—enhancing accessibility, engagement, and progress tracking.',
+      },
+      {
+        title: 'Role:',
+        description:
+          'Led product development, defined the vision, and conducted user research. Created personas, prioritized features with Agile methodologies, and designed prototypes & user flows in Figma for usability testing.',
+      },
     ]}
     image={{
       src: '~/assets/images/11488949.jpg',
       alt: 'Tech Design Image',
     }}
-
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
@@ -245,59 +241,64 @@ const metadata = {
 
   <!-- XP short ****************** -->
   <Steps2
-  title="Professional Achievements"
-  subtitle="Driving impact through product strategy, community building, and operational excellence."
-  isReversed={true}
-  callToAction={{
-    text: 'See More',
-    href: '/cv', // Links to the full Work Experience page
-  }}
-  items={[
-    {
-      title: 'Founder & Product Manager at SheLeadsProduct.tech',
-      description: 'Built a platform to connect and empower women in product management. Organized networking events, established project task forces, and created a resource hub to foster collaboration and professional growth.',
-      icon: 'tabler:rocket',
-    },
-    {
-      title: 'Payroll & Benefits Analyst at State Street',
-      description: 'Managed payroll operations for a global financial services company, ensuring compliance and efficiency. Spearheaded process improvements and data-driven insights to optimize HR operations.',
-      icon: 'tabler:briefcase',
-    },
-    {
-      title: 'Customer Management Advisor at NGA Human Resources',
-      description: 'Managed payroll and HR operations for multiple clients, ensuring accuracy and compliance. Optimized workforce administration, streamlined processes, and enhanced the customer experience through problem-solving and data management.',
-      icon: 'tabler:users',
-    },
-  ]}
-/>
+    title="Professional Achievements"
+    subtitle="Driving impact through product strategy, community building, and operational excellence."
+    isReversed={true}
+    callToAction={{
+      text: 'See More',
+      href: '/cv', // Links to the full Work Experience page
+    }}
+    items={[
+      {
+        title: 'Founder & Product Manager at SheLeadsProduct.tech',
+        description:
+          'Built a platform to connect and empower women in product management. Organized networking events, established project task forces, and created a resource hub to foster collaboration and professional growth.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Payroll & Benefits Analyst at State Street',
+        description:
+          'Managed payroll operations for a global financial services company, ensuring compliance and efficiency. Spearheaded process improvements and data-driven insights to optimize HR operations.',
+        icon: 'tabler:briefcase',
+      },
+      {
+        title: 'Customer Management Advisor at NGA Human Resources',
+        description:
+          'Managed payroll and HR operations for multiple clients, ensuring accuracy and compliance. Optimized workforce administration, streamlined processes, and enhanced the customer experience through problem-solving and data management.',
+        icon: 'tabler:users',
+      },
+    ]}
+  />
 
   <!-- Steps Widget ****************** -->
   <Steps2
-  title="Academic Achievements"
-  subtitle="A foundation built on strategic learning, data-driven insights, and global perspectives."
-
-  callToAction={{
-    text: 'See More',
-    href: '/cv', // Links to the full Education page
-  }}
-  items={[
-    {
-      title: 'Product Management Bootcamp – AllWomen',
-      description: 'Developed expertise in product strategy, Agile methodologies, data-driven decision-making, and stakeholder management to drive impactful product solutions.',
-      icon: 'tabler:school',
-    },
-    {
-      title: 'MBA – ENEB (Escuela de Negocios Europea de Barcelona)',
-      description: 'Specialized in business strategy, change management, digital transformation, and market research to enhance leadership and operational efficiency.',
-      icon: 'tabler:businessplan',
-    },
-    {
-      title: 'BA in Sociology & Political Science – Goethe University Frankfurt',
-      description: 'Gained deep analytical skills in market research, user behavior, and data interpretation, laying the foundation for human-centered product development.',
-      icon: 'tabler:book',
-    },
-  ]}
-/>
+    title="Academic Achievements"
+    subtitle="A foundation built on strategic learning, data-driven insights, and global perspectives."
+    callToAction={{
+      text: 'See More',
+      href: '/cv', // Links to the full Education page
+    }}
+    items={[
+      {
+        title: 'Product Management Bootcamp – AllWomen',
+        description:
+          'Developed expertise in product strategy, Agile methodologies, data-driven decision-making, and stakeholder management to drive impactful product solutions.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'MBA – ENEB (Escuela de Negocios Europea de Barcelona)',
+        description:
+          'Specialized in business strategy, change management, digital transformation, and market research to enhance leadership and operational efficiency.',
+        icon: 'tabler:businessplan',
+      },
+      {
+        title: 'BA in Sociology & Political Science – Goethe University Frankfurt',
+        description:
+          'Gained deep analytical skills in market research, user behavior, and data interpretation, laying the foundation for human-centered product development.',
+        icon: 'tabler:book',
+      },
+    ]}
+  />
 
   <!-- Easter Egg *********** -->
   <Content
@@ -305,21 +306,21 @@ const metadata = {
     columns={3}
     items={[
       {
-    icon: 'tabler:brand-linkedin',
-    callToAction: {
-      target: '_blank',
-      text: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/anna-lenabirkner', 
-    },
-  },
-  {
-    icon: 'tabler:mail',
-    callToAction: {
-      target: '_blank',
-      text: 'Email Me',
-      href: 'birkneranna@gmail.com', // Replace with your email
-    },
-  }
+        icon: 'tabler:brand-linkedin',
+        callToAction: {
+          target: '_blank',
+          text: 'LinkedIn',
+          href: 'https://www.linkedin.com/in/anna-lenabirkner',
+        },
+      },
+      {
+        icon: 'tabler:mail',
+        callToAction: {
+          target: '_blank',
+          text: 'Email Me',
+          href: 'birkneranna@gmail.com', // Replace with your email
+        },
+      },
     ]}
     image={{
       src: '~/assets/images/earlyadopter.png',
@@ -327,24 +328,22 @@ const metadata = {
       loading: 'eager',
     }}
   >
-  <Fragment slot="content">
-    <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">OMG – You Made It! 🎉</h2>
-    <p>
-      Seriously, I’m impressed. Since you scrolled all the way down here, I’ve got a little something for you – 
-      a special treat from my early days as a tech enthusiast. Behold: a baby pic of me hacking away on an old-school keyboard. 
-      An early adopter in the making! 🖥️👶
-    </p>
-    <br />
-    <p>
-      But enough about me – I’d love to connect! Whether it’s about AI, Tech, Product Management, or even cooking 
-      (yes, I love whipping up delicious meals when I’m not building products), I’m always up for a good conversation. 
-      Let’s chat, brainstorm, or just geek out over something cool. 🚀
-    </p>
-    <br />
-    <p>
-      Feel free to reach out – let’s talk tech, ideas, or share some killer recipes. Whatever works. 😊
-    </p>
-  </Fragment>
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">OMG – You Made It! 🎉</h2>
+      <p>
+        Seriously, I’m impressed. Since you scrolled all the way down here, I’ve got a little something for you – a
+        special treat from my early days as a tech enthusiast. Behold: a baby pic of me hacking away on an old-school
+        keyboard. An early adopter in the making! 🖥️👶
+      </p>
+      <br />
+      <p>
+        But enough about me – I’d love to connect! Whether it’s about AI, Tech, Product Management, or even cooking
+        (yes, I love whipping up delicious meals when I’m not building products), I’m always up for a good conversation.
+        Let’s chat, brainstorm, or just geek out over something cool. 🚀
+      </p>
+      <br />
+      <p>Feel free to reach out – let’s talk tech, ideas, or share some killer recipes. Whatever works. 😊</p>
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -362,5 +361,4 @@ const metadata = {
       },
     ]}
   />
-
 </Layout>

@@ -29,7 +29,7 @@ Volkswagen’s global scope, technical ambition, and emphasis on team empowermen
 ## I bring:
 
 ✔ 3+ years of experience managing digital projects and Agile teams
-✔ Proven ability to lead cross-functional delivery 
+✔ Proven ability to lead cross-functional delivery
 ✔ Fluency in English and German (C1)
 ✔ A collaborative, cuirose, outcome-oriented mindset
 

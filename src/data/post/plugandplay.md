@@ -4,6 +4,7 @@ author: Anna-Lena Birkner
 title: Cover Letter - Plug and Play
 category: Application
 ---
+
 ## Driving Innovation & Strategy at Plug and Play Tech Center
 
 Innovation is the driving force behind corporate evolution, and Plug and Play Tech Center stands at the forefront of this transformation. With a background in Product Management, Social Sciences, and HR Analytics, I am eager to apply my expertise in strategy execution, stakeholder engagement, and research-driven insights to help organizations develop and implement impactful innovation initiatives.
