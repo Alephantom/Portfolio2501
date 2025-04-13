@@ -1,7 +1,8 @@
-import { getPermalink, 
-  // getBlogPermalink, 
+import {
+  getPermalink,
+  // getBlogPermalink,
 
-  // getAsset 
+  // getAsset
 } from './utils/permalinks';
 
 export const headerData = {
@@ -9,42 +10,40 @@ export const headerData = {
     {
       text: 'Home',
       href: getPermalink('/'),
-        
-      
     },
     {
       text: 'About Me',
-          href: getPermalink('/cv'),
-    //   links: [
-    //     {
-    //       text: 'Features (Anchor Link)',
-    //       href: getPermalink('/#features'),
-    //     },
-    //     {
-    //       text: 'Services',
-    //       href: getPermalink('/services'),
-    //     },
-    //     {
-    //       text: 'Pricing',
-    //       href: getPermalink('/pricing'),
-    //     },
-    //     {
-    //       text: 'About us',
-    //       href: getPermalink('/about'),
-    //     },
-    //     {
-    //       text: 'Contact',
-    //       href: getPermalink('/contact'),
-    //     },
-    //     {
-    //       text: 'Terms',
-    //       href: getPermalink('/terms'),
-    //     },
-    //     {
-    //       text: 'Privacy policy',
-    //       href: getPermalink('/privacy'),
-    //     },
-    //   ],
+      href: getPermalink('/cv'),
+      //   links: [
+      //     {
+      //       text: 'Features (Anchor Link)',
+      //       href: getPermalink('/#features'),
+      //     },
+      //     {
+      //       text: 'Services',
+      //       href: getPermalink('/services'),
+      //     },
+      //     {
+      //       text: 'Pricing',
+      //       href: getPermalink('/pricing'),
+      //     },
+      //     {
+      //       text: 'About us',
+      //       href: getPermalink('/about'),
+      //     },
+      //     {
+      //       text: 'Contact',
+      //       href: getPermalink('/contact'),
+      //     },
+      //     {
+      //       text: 'Terms',
+      //       href: getPermalink('/terms'),
+      //     },
+      //     {
+      //       text: 'Privacy policy',
+      //       href: getPermalink('/privacy'),
+      //     },
+      //   ],
     },
     // {
     //   text: 'Landing',
@@ -100,7 +99,6 @@ export const headerData = {
     //     },
     //   ],
     // },
-
   ],
   actions: [{ text: 'Connect', href: '/contact', target: '_blank' }],
 };
@@ -115,9 +113,6 @@ export const footerData = {
     //     { text: 'Contact', href: '/contact' },
     //   ],
     // }
-
-
-
   ],
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },

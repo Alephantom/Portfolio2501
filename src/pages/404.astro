@@ -25,8 +25,8 @@ const title = `Error 404`;
           target: '_blank',
           text: 'Home',
           href: '/',
+        },
       },
-    },
     ]}
     image={{
       src: '~/assets/images/Notion 404.png',
@@ -34,37 +34,33 @@ const title = `Error 404`;
       loading: '4-0-4',
     }}
   >
-  <Fragment slot="content">
-    <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-      ⚠️ Oops! 
-    </h2>
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">⚠️ Oops!</h2>
 
-    <p>
-    It looks like this page didn’t make it into the current sprint. 
-      The roadmap shifted, priorities changed, and now we’re left with a 404. 
-      But don’t worry—our next iteration is on it!
-    </p>
-    <br />
-    
-    <p><strong>Possible Causes:</strong></p>
-    <ul>
-      <li>The feature request (a.k.a. this page) wasn’t properly scoped.</li>
-      <li>Stakeholders (you) are looking for something still in development.</li>
-      <li>The roadmap changed, and this item got de-prioritized. 😅</li>
-    </ul>
-    <br />
+      <p>
+        It looks like this page didn’t make it into the current sprint. The roadmap shifted, priorities changed, and now
+        we’re left with a 404. But don’t worry—our next iteration is on it!
+      </p>
+      <br />
 
-    <p><strong>Next Steps:</strong></p>
-    <ul>
-      <li>Check the homepage for available features.</li>
-      <li>Contact the product owner (me) for updates.</li>
-      <li>Refresh and hope for an A/B test miracle. 🤞</li>
-    </ul>
-  </Fragment>
+      <p><strong>Possible Causes:</strong></p>
+      <ul>
+        <li>The feature request (a.k.a. this page) wasn’t properly scoped.</li>
+        <li>Stakeholders (you) are looking for something still in development.</li>
+        <li>The roadmap changed, and this item got de-prioritized. 😅</li>
+      </ul>
+      <br />
 
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-  </Fragment>
+      <p><strong>Next Steps:</strong></p>
+      <ul>
+        <li>Check the homepage for available features.</li>
+        <li>Contact the product owner (me) for updates.</li>
+        <li>Refresh and hope for an A/B test miracle. 🤞</li>
+      </ul>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
   </Content>
-
 </Layout>
